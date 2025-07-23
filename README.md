@@ -1,99 +1,39 @@
-# FoodSaver - AI-Powered Food Waste Reduction Platform
+# Doctor Appointment Scheduling Web App
 
-![FoodSaver Logo](https://images.pexels.com/photos/4099093/pexels-photo-4099093.jpeg?w=800&h=400&fit=crop)
+A modern, responsive doctor appointment scheduling application built with Next.js, TypeScript, and Tailwind CSS.
 
-**FoodSaver** is a comprehensive web platform designed to reduce food waste by connecting food donors (restaurants, caterers, individuals) with NGOs and volunteers. Using AI-powered insights, the platform optimizes food redistribution to maximize impact and minimize waste.
+## 🚀 Features
 
-## 🌟 Features
+- **User Authentication**: Simple login system with form validation
+- **Doctor Directory**: Browse and select from available doctors
+- **Appointment Booking**: Complete booking system with date/time selection
+- **Responsive Design**: Mobile-first design that works on all devices
+- **Form Validation**: Robust form validation using React Hook Form + Zod
+- **Local Storage**: Persistent data storage for demo purposes
+- **Professional UI**: Clean, medical-themed interface
 
-### 🔧 Core Modules
+## 🛠 Tech Stack
 
-#### Food Donation Module (Donor Side)
-- **Food Upload Form**: Easy-to-use form for uploading leftover food details
-  - Food name, quantity, type, and expiry time
-  - Location detection (auto-detect or manual entry)
-  - Upload photos and additional notes
-- **Donor Dashboard**: Comprehensive view of donation history and statistics
-- **Auto-expiry Cleanup**: Automatic removal of expired food listings
+- **Framework**: Next.js 13+ with TypeScript
+- **Styling**: Tailwind CSS
+- **Form Handling**: React Hook Form with Zod validation
+- **Icons**: Lucide React
+- **State Management**: React Hooks + Local Storage
+- **UI Components**: Custom components with Radix UI primitives
 
-#### NGO/Volunteer Dashboard
-- **Interactive Map**: Visual representation of nearby food donations
-- **Donation Management**: Accept/reject donation offers with real-time updates
-- **Pickup Tracking**: Track pickup status and provide feedback
-- **Performance Metrics**: Monitor pickup efficiency and impact
-
-#### Admin Dashboard
-- **Comprehensive Analytics**: View platform-wide statistics and trends
-- **User Management**: Approve NGO registrations and manage user accounts
-- **Data Visualization**: Interactive charts and graphs using Chart.js
-- **Platform Monitoring**: Real-time system health and performance metrics
-
-#### AI Prediction Engine
-- **Surplus Forecasting**: Predict likely surplus areas and events using historical data
-- **Pattern Analysis**: Identify donation trends and optimal pickup times
-- **Route Optimization**: Suggest efficient pickup routes for NGOs
-- **Demand Prediction**: Help restaurants and caterers plan more accurately
-
-#### Gamification System
-- **Leaderboards**: Top donors and NGOs with point-based rankings
-- **Achievement Badges**: Milestone rewards for consistent participation
-- **Impact Tracking**: Personal and community impact statistics
-- **Social Features**: Share achievements and encourage participation
-
-#### Notification System
-- **Real-time Alerts**: Instant notifications for new donations and pickups
-- **Email Notifications**: Automated email alerts for important events
-- **SMS Integration**: Critical alerts via SMS (simulated in demo)
-- **Push Notifications**: Browser notifications for active users
-
-### 🎨 Design Features
-
-- **Responsive Design**: Optimized for desktop, tablet, and mobile devices
-- **Modern UI/UX**: Clean, intuitive interface with smooth animations
-- **Accessibility**: WCAG-compliant design for inclusive user experience
-- **Dark/Light Mode**: Customizable theme preferences (coming soon)
-
-## 🛠️ Technology Stack
-
-### Frontend
-- **React 18** with TypeScript for type-safe development
-- **Tailwind CSS** for modern, responsive styling
-- **React Router** for client-side routing
-- **Chart.js** with React Chart.js 2 for data visualization
-- **React Hook Form** for efficient form handling
-- **React Hot Toast** for user notifications
-- **Lucide React** for consistent iconography
-
-### Backend (Simulated)
-- **Node.js** runtime environment
-- **Express.js** for API endpoints (simulated)
-- **Local Storage** for data persistence in demo
-- **JSON** for data storage and management
-
-### AI/ML (Simulated)
-- **JavaScript algorithms** for prediction simulation
-- **Pattern recognition** for trend analysis
-- **Statistical modeling** for forecast generation
-- **Machine learning concepts** applied to food waste prediction
-
-### Development Tools
-- **Vite** for fast development and building
-- **ESLint** for code quality and consistency
-- **TypeScript** for static type checking
-- **PostCSS** with Autoprefixer for CSS processing
-
-## 🚀 Getting Started
+## 📦 Installation & Setup
 
 ### Prerequisites
-- Node.js (version 18 or higher)
-- npm or yarn package manager
 
-### Installation
+- Node.js 18+ 
+- npm or yarn
+
+### Installation Steps
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/foodsaver-platform.git
-   cd foodsaver-platform
+   git clone <repository-url>
+   cd doctor-appointment-app
    ```
 
 2. **Install dependencies**
@@ -101,239 +41,183 @@
    npm install
    ```
 
-3. **Start the development server**
+3. **Run the development server**
    ```bash
    npm run dev
    ```
 
 4. **Open your browser**
-   Navigate to `http://localhost:5173` to view the application
+   Navigate to `http://localhost:3000`
 
-### Demo Accounts
+## 🏗 Project Structure
 
-The platform includes pre-configured demo accounts for testing:
-
-| Role | Email | Password | Description |
-|------|-------|----------|-------------|
-| **Donor** | donor@foodsaver.com | password | Restaurant/individual donor account |
-| **NGO** | ngo@foodsaver.com | password | Verified NGO/volunteer organization |
-| **Admin** | admin@foodsaver.com | password | Platform administrator account |
-
-## 📱 Usage Guide
-
-### For Food Donors
-1. **Sign Up/Login**: Create an account or use the demo donor account
-2. **Create Donation**: Fill out the donation form with food details
-3. **Track Status**: Monitor donation status and pickup progress
-4. **Earn Points**: Gain points for successful donations and climb the leaderboard
-
-### For NGOs/Volunteers
-1. **Register**: Sign up as an NGO and wait for admin verification
-2. **Browse Map**: View nearby donations on the interactive map
-3. **Reserve Food**: Click to reserve donations for pickup
-4. **Complete Pickups**: Mark donations as picked up and provide feedback
-
-### For Administrators
-1. **Monitor Platform**: View comprehensive analytics and statistics
-2. **Manage Users**: Approve NGO registrations and manage accounts
-3. **AI Insights**: Review AI-generated predictions and recommendations
-4. **System Health**: Monitor platform performance and user engagement
-
-## 🤖 AI Features
-
-### Surplus Prediction
-- **Machine Learning Models**: Analyze historical donation patterns
-- **Area-based Forecasting**: Predict surplus food in specific locations
-- **Time-based Analysis**: Identify peak donation times and patterns
-- **Confidence Scoring**: Provide reliability metrics for predictions
-
-### Pattern Recognition
-- **Food Type Trends**: Analyze which types of food are donated most frequently
-- **Seasonal Patterns**: Identify seasonal variations in food donations
-- **Donor Behavior**: Understand donor patterns and preferences
-- **NGO Efficiency**: Track pickup efficiency and suggest improvements
-
-### Optimization Algorithms
-- **Route Planning**: Suggest optimal pickup routes for NGOs
-- **Resource Allocation**: Recommend NGO deployment based on demand
-- **Inventory Management**: Help donors plan inventory to reduce waste
-- **Impact Maximization**: Optimize food distribution for maximum community benefit
-
-## 📊 Analytics & Reporting
-
-### Key Metrics
-- Total food saved (kg)
-- Number of people fed
-- Donations per region
-- Pickup success rate
-- User engagement statistics
-
-### Visualizations
-- **Bar Charts**: Food type distribution and monthly trends
-- **Pie Charts**: Donation status breakdown
-- **Line Graphs**: Performance trends over time
-- **Heat Maps**: Geographic distribution of donations
-
-### Reports
-- **Monthly Impact Reports**: Comprehensive platform performance
-- **User Activity Reports**: Individual and organization statistics
-- **Predictive Analytics**: Future trends and recommendations
-- **ROI Analysis**: Platform efficiency and cost-effectiveness
-
-## 🔧 Development
-
-### Project Structure
 ```
-src/
-├── components/          # React components
-│   ├── Auth/           # Authentication components
-│   ├── Dashboard/      # Dashboard components
-│   ├── Forms/          # Form components
-│   ├── Lists/          # List components
-│   ├── Maps/           # Map components
-│   ├── UI/             # Reusable UI components
-│   └── AI/             # AI-related components
-├── contexts/           # React context providers
-├── types/              # TypeScript type definitions
-├── utils/              # Utility functions
-└── styles/             # CSS and styling files
+doctor-appointment-app/
+├── app/                          # Next.js 13+ App Router
+│   ├── globals.css              # Global styles
+│   ├── layout.tsx               # Root layout
+│   ├── page.tsx                 # Dashboard page
+│   ├── login/
+│   │   └── page.tsx            # Login page
+│   └── appointment/
+│       └── page.tsx            # Appointment booking page
+├── components/                   # Reusable components
+│   ├── ui/                      # Base UI components
+│   │   ├── button.tsx
+│   │   ├── input.tsx
+│   │   ├── card.tsx
+│   │   ├── LoadingSpinner.tsx
+│   │   └── ErrorMessage.tsx
+│   ├── DoctorCard.tsx          # Doctor selection card
+│   └── StatsCard.tsx           # Statistics display card
+├── lib/                        # Utilities and configurations
+│   ├── constants.ts            # App constants and mock data
+│   ├── types.ts               # TypeScript type definitions
+│   ├── utils.ts               # Utility functions
+│   └── utils/
+│       ├── storage.ts         # Local storage operations
+│       └── validation.ts      # Form validation schemas
+├── next.config.js             # Next.js configuration
+├── tailwind.config.ts         # Tailwind CSS configuration
+└── package.json              # Dependencies and scripts
 ```
+
+## 🔧 How to Use
+
+### 1. Login
+- Navigate to `/login`
+- Enter any username (minimum 3 characters)
+- Enter any password (minimum 6 characters)
+- Click "Sign In"
+
+### 2. Dashboard
+- View welcome message and statistics
+- Navigate to appointment booking
+- See recent appointments
+
+### 3. Book Appointment
+- Navigate to `/appointment`
+- Select a doctor from the available list
+- Fill out the appointment form:
+  - Patient name
+  - Email address
+  - Phone number
+  - Appointment date
+  - Time slot
+  - Additional notes (optional)
+- Submit the form
+
+## 📱 Pages & Components
+
+### Pages
+
+1. **Login Page** (`/login`)
+   - Username/password authentication
+   - Form validation with error messages
+   - Demo credentials display
+   - Responsive design
+
+2. **Dashboard** (`/`)
+   - Welcome message
+   - Statistics cards
+   - Recent appointments
+   - Quick navigation
+
+3. **Appointment Booking** (`/appointment`)
+   - Doctor selection interface
+   - Comprehensive booking form
+   - Real-time validation
+   - Success confirmation
 
 ### Key Components
-- **AuthContext**: User authentication and session management
-- **DataContext**: Application data management and state
-- **DonorDashboard**: Donor-specific dashboard and features
-- **NGODashboard**: NGO-specific dashboard and map integration
-- **AdminDashboard**: Administrative interface and analytics
-- **AIInsights**: AI-powered predictions and recommendations
 
-### Building for Production
+1. **DoctorCard**
+   - Doctor information display
+   - Interactive selection
+   - Rating and experience info
+
+2. **StatsCard**
+   - Dashboard statistics
+   - Icon and color coding
+   - Hover effects
+
+3. **LoadingSpinner**
+   - Loading state indicator
+   - Multiple size options
+   - Consistent branding
+
+## 🎨 Design Features
+
+- **Medical Theme**: Professional blue and teal color scheme
+- **Responsive**: Mobile-first design with breakpoints
+- **Animations**: Subtle hover effects and transitions
+- **Accessibility**: Proper ARIA labels and keyboard navigation
+- **Typography**: Clean, readable font hierarchy
+- **Forms**: Intuitive form design with clear validation
+
+## 🔒 Authentication
+
+The app uses a simple authentication system for demonstration:
+- Any username (3+ characters) and password (6+ characters) will work
+- User data is stored in localStorage
+- Protected routes redirect to login if not authenticated
+
+## 💾 Data Storage
+
+The application uses localStorage for data persistence:
+- User authentication state
+- Appointment bookings
+- Mock doctor data from constants
+
+## 🚀 Deployment
+
+### Build for Production
+
 ```bash
 npm run build
 ```
 
-### Code Quality
-```bash
-npm run lint
-```
+### Deploy to Netlify/Vercel
 
-## 🌐 Deployment
+The app is configured for static export and can be deployed to any static hosting service:
 
-### Local Deployment
-The application is ready to run locally with the development server. All features are fully functional in the demo environment.
+1. **Build the project**: `npm run build`
+2. **Deploy the `out` folder** to your hosting service
 
-### Production Deployment
-
-#### Option 1: Netlify (Recommended)
-1. Build the project: `npm run build`
-2. Deploy the `dist` folder to Netlify
-3. Configure environment variables if needed
-
-#### Option 2: Vercel
-1. Connect your GitHub repository to Vercel
-2. Vercel will automatically detect the Vite configuration
-3. Deploy with automatic builds on commits
-
-#### Option 3: Traditional Hosting
-1. Build the project: `npm run build`
-2. Upload the `dist` folder to your web server
-3. Configure server to serve the SPA correctly
+## 🔧 Configuration
 
 ### Environment Variables
-For production deployment, consider these environment variables:
-```env
-VITE_API_URL=your-api-endpoint
-VITE_MAPS_API_KEY=your-maps-api-key
-VITE_NOTIFICATION_SERVICE=your-notification-service
-```
 
-## 🔮 Future Enhancements
+No environment variables are required for basic functionality. The app uses mock data for demonstration.
 
-### Mobile Application
-- **React Native App**: Native mobile app for iOS and Android
-- **Push Notifications**: Real-time mobile notifications
-- **GPS Integration**: Automatic location detection and routing
-- **Camera Integration**: Direct photo upload for food donations
+### Customization
 
-### IoT Integration
-- **Smart Refrigerators**: Automatic expiry date detection
-- **Weight Sensors**: Automatic quantity measurement
-- **Temperature Monitoring**: Food safety and quality assurance
-- **RFID Tracking**: Advanced inventory management
+- **Colors**: Modify `tailwind.config.ts` for theme changes
+- **Mock Data**: Update `lib/constants.ts` for different doctors/data
+- **Validation**: Adjust schemas in `lib/utils/validation.ts`
 
-### Advanced AI Features
-- **Computer Vision**: Automatic food type recognition from photos
-- **Natural Language Processing**: Smart categorization from descriptions
-- **Blockchain Integration**: Transparent food tracking and verification
-- **Predictive Modeling**: Advanced machine learning for waste prediction
+## 📋 Features Checklist
 
-### Social Features
-- **Community Forums**: User discussion and collaboration
-- **Social Media Integration**: Share impact and achievements
-- **Volunteer Matching**: Connect volunteers with NGOs
-- **Corporate Partnerships**: Business-to-business food sharing
+- ✅ User authentication with validation
+- ✅ Doctor directory with selection
+- ✅ Appointment booking form
+- ✅ Form validation with React Hook Form
+- ✅ Responsive design with Tailwind CSS
+- ✅ Local storage for data persistence
+- ✅ Professional medical UI theme
+- ✅ Loading states and error handling
+- ✅ TypeScript throughout
+- ✅ Clean, modular code structure
 
 ## 🤝 Contributing
 
-We welcome contributions from the community! Here's how you can help:
-
-### Types of Contributions
-- **Bug Reports**: Report issues and bugs
-- **Feature Requests**: Suggest new features and improvements
-- **Code Contributions**: Submit pull requests with enhancements
-- **Documentation**: Improve documentation and guides
-- **Testing**: Help test new features and report feedback
-
-### Development Workflow
 1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/amazing-feature`
-3. Make your changes and commit: `git commit -m 'Add amazing feature'`
-4. Push to the branch: `git push origin feature/amazing-feature`
-5. Open a Pull Request
-
-### Coding Standards
-- Follow the existing code style and conventions
-- Write clear, commented code
-- Include tests for new features
-- Update documentation as needed
-- Ensure all tests pass before submitting
+2. Create a feature branch
+3. Make your changes
+4. Add tests if needed
+5. Submit a pull request
 
 ## 📄 License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## 👥 Team & Acknowledgments
-
-### Core Team
-- **Product Manager**: Platform strategy and user experience
-- **Lead Developer**: Full-stack development and architecture
-- **AI/ML Engineer**: Machine learning and prediction algorithms
-- **UI/UX Designer**: User interface and experience design
-- **DevOps Engineer**: Deployment and infrastructure management
-
-### Acknowledgments
-- **Chart.js**: For excellent data visualization capabilities
-- **Lucide React**: For beautiful, consistent icons
-- **Pexels**: For high-quality stock photography
-- **React Community**: For the amazing ecosystem and tools
-- **Open Source Contributors**: For inspiration and code examples
-
-## 📞 Support & Contact
-
-### Getting Help
-- **Documentation**: Check this README and inline code comments
-- **Issues**: Create a GitHub issue for bugs and feature requests
-- **Discussions**: Use GitHub Discussions for questions and ideas
-- **Email**: Contact us at support@foodsaver.com (demo email)
-
-### Community
-- **Discord**: Join our community Discord server (coming soon)
-- **Twitter**: Follow @FoodSaverAI for updates (demo account)
-- **LinkedIn**: Connect with us on LinkedIn (demo profile)
-- **Newsletter**: Subscribe to our monthly impact newsletter
-
----
-
-**Made with ❤️ by the FoodSaver Team**
-
-*Together, we can create a world with zero food waste and zero hunger.*
+This project is open source and available under the [MIT License](LICENSE)."# patient-scheduler-ui"  
+"# patient-scheduler-ui"  
