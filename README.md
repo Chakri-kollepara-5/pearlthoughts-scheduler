@@ -217,7 +217,4 @@ No environment variables are required for basic functionality. The app uses mock
 4. Add tests if needed
 5. Submit a pull request
 
-## 📄 License
 
-This project is open source and available under the [MIT License](LICENSE)."# patient-scheduler-ui"  
-"# patient-scheduler-ui"  
