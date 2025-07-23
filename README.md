@@ -82,7 +82,7 @@ doctor-appointment-app/
 └── package.json              # Dependencies and scripts
 ```
 
-## 🔧 How to Use
+##  How to Use
 
 ### 1. Login
 - Navigate to `/login`
